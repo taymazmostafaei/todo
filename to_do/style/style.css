@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  ::selection{
+    color: #ffff;
+    background: rgb(142, 73, 232);
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background: linear-gradient(to bottom, #49b49b 0%, #6f95e6 100%);
+  }
+  .wrapper{
+    max-width: 400px;
+    background: #fff;
+    width: 100%;
+    margin: 120px auto;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  }
+  .wrapper:hover{
+    background: #fff;
+    transition: all 2s linear;
+  }
+  .wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .wrapper .inputField{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 45px;
+  }
+  .inputField input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+  }
+
+
+  .inputField button:hover,
+  .footer button:hover{
+    background: #7434d4;
+  }
+  .inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .wrapper .todoList{
+    max-height: 250px;
+    overflow-y: auto;
+  }
+  .todoList li{
+    position: relative;
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+  }
+  .todoList li .icon{
+    position: absolute;
+    right: -45px;
+    background: #e74c3c;
+    width: 45px;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .todoList li:hover .icon{
+    right: 0px;
+  }
+  .wrapper .footer{
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
+ .fas {
+   content: attr(sghl);
+ }
+ .plus {
+  display:inline-block;
+  width:50px;
+  height:50px;
+  
+  background:
+  linear-gradient(#fff,#fff),
+  linear-gradient(#fff,#fff),
+  rgb(86, 80, 172);
+  ;
+  background-position:center;
+  background-size: 50% 2px,2px 50%;
+  background-repeat:no-repeat;
+ }
+ input[type="checkbox"]{
+   width: 14px;
+   height: 14px;
+  
+ }
+ input[type="checkbox"]:checked{
+   width: 16px;
+   height: 16px;
+ }
+ input[type="checkbox"]+do{
+  color: #000000;
+  font-size: 15px;
+  margin-left: 5px;
+ }
+ input[type="checkbox"]:checked+do{
+color: #8E49E8;
+font-size: 20px;
+font-style:unset;
+ }
+.clear{
+   background-color: #8E49E8;
+  display: block;
+  width: 65px;
+  height: 35px;
+  font-size: 15px;
+  color: #fff;
+  border: 1px;
+   
+ }
+ .fab {
+  width: 45px;
+  height: 45px;
+  background-color: #8E49E8;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  
+
+  
+
+}
+
+
+
